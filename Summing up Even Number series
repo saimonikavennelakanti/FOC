@@ -1,0 +1,22 @@
+INPUT:
+
+
+int main() {
+   int n, sum = 0;
+   
+   printf("Enter a positive integer n: ");
+   scanf("%d", &n);
+
+   for(int i=2; i<=n; i+=2) {
+      sum += i;
+   }
+
+   printf("The sum of the even numbers from 2 to %d is %d", n, sum);
+   
+   return 0;
+}
+
+OUTPUT:
+
+Enter a positive integer n: 10
+The sum of the even numbers from 2 to 10 is 30
