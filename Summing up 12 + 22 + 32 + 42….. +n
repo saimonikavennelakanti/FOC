@@ -1,0 +1,24 @@
+INPUT:
+
+#include<stdio.h>
+int main() {
+    int n, i, sum;
+
+    printf("Enter a value for n:");
+    scanf("%d", &n);
+
+    sum = 0;
+    for (i = 1; i <= n; i++)
+	        sum += i * i ;
+    }
+
+    printf("The sum of the series 1^2 + 2^2 + 3^2 + 4^2 + ... + %d is %d.\n",n, sum);
+
+    return 0;
+}	 
+
+output:
+
+Enter a value for n:5
+The sum of the series 1^2 + 2^2 + 3^2 + 4^2 + ... + 5 is 55.
+
