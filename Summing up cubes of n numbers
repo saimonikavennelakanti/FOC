@@ -1,0 +1,24 @@
+INPUT:
+
+#include <stdio.h>
+
+int main() {
+    int n, i, sum = 0;
+    
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    
+    for(i = 1; i <= n; i++) {
+        sum += i * i * i; // cube of the current number
+    }
+    
+    printf("Sum of cubes of %d numbers is %d\n", n, sum);
+    
+    return 0;
+}
+
+
+OUTPUT:
+
+Enter the number of terms: 5
+Sum of cubes of 5 numbers is 225
