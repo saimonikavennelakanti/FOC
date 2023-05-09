@@ -1,0 +1,24 @@
+INPUT:
+
+#include <stdio.h>
+
+int main() {
+    int n, i, sum = 0;
+    
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    for(i = 1; i <= n; i += 2) {
+        sum += i *i;
+    }
+    
+    printf("Sum of squares of odd numbers up to %d is %d\n", n, sum);
+    
+    return 0;
+}
+
+
+OUTPUT:
+
+Enter a number: 9
+Sum of squares of odd numbers up to 9 is 165
