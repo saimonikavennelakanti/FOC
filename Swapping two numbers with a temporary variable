@@ -1,0 +1,26 @@
+INPUT:
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2, temp;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    printf("Before swapping: num1 = %d, num2 = %d\n", num1, num2);
+     temp = num1;
+    num1 = num2;
+    num2 = temp;
+
+    printf("After swapping: num1 = %d, num2 = %d\n", num1, num2);
+
+    return 0;
+}
+
+OUTPUT:
+
+Enter two integers: 10
+5
+Before swapping: num1 = 10, num2 = 5
+After swapping: num1 = 5, num2 = 10
