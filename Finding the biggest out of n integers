@@ -1,0 +1,36 @@
+INPUT:
+
+#include <stdio.h>
+
+int main() {
+    int n, i, num, max;
+    
+    printf("Enter the number of integers: ");
+    scanf("%d", &n);
+    
+    printf("Enter the first integer: ");
+    scanf("%d", &max);
+    
+    for (i = 1; i < n; i++) {
+        printf("Enter integer %d: ", i + 1);
+        scanf("%d", &num);
+        
+        if (num > max) {
+            max = num;
+        }
+    }
+    
+    printf("The biggest integer is %d\n", max);
+    
+    return 0;
+}
+
+OUTPUT:
+
+Enter the number of integers: 5
+Enter the first integer: 5
+Enter integer 2: 10
+Enter integer 3: 15
+Enter integer 4: 20
+Enter integer 5: 25
+The biggest integer is 25
