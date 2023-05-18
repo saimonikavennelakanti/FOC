@@ -1,0 +1,37 @@
+INPUT:
+
+#include <stdio.h>
+
+double calculateExponentialSeries(double x, int n) {
+    double result = 1.0; 
+    double term = 1.0;
+
+    for (int i = 1; i <= n; i++) {
+        term *= x / i;  
+        result += term; 
+    }
+
+    return result;
+}
+
+int main() {
+    double x;
+    int n;
+
+    printf("Enter the value of x: ");
+    scanf("%lf", &x);
+
+    printf("Enter the number of terms to calculate: ");
+    scanf("%d", &n);
+
+    double result = calculateExponentialSeries(x, n);
+    printf("The result of e^%.2f using %d terms is %.4f\n", x, n, result);
+
+    return 0;
+}
+
+OUTPUT:
+
+Enter the value of x: 5
+Enter the number of terms to calculate: 5
+The result of e^5.00 using 5 terms is 91.4167
